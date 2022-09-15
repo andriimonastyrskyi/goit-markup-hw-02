@@ -1,0 +1,173 @@
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+:root {
+  --primary-background: #ffffff;
+  --first-background: #2f303a;
+  --secondary-background: #f5f4fa;
+
+  --background-btn: #2196f3;
+  --btn-color: #ffffff;
+
+  --accent-text: #2196f3;
+  --primary-text: #212121;
+  --secondary-text: #757575;
+  --contacts-text: rgba(255, 255, 255, 0.6);
+
+  --hero-color: #ffffff;
+  --logo-header: #000000;
+  --footer-color: #ffffff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text);
+  background-color: var(--primary-background);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+.text {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+/* -------------header------------- */
+
+.logo-web {
+  color: var(--accent-text);
+}
+.header-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--logo-header);
+}
+.header-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.header-link:hover .header-email:hover {
+  color: #2196f3;
+}
+.haeder-tel .header-email {
+  font-weight: 500;
+  line-height: 1.14x;
+  letter-spacing: 0.02em;
+}
+
+/* ---------------------секція hero ---------------------*/
+
+.btn {
+  color: var(--btn-color);
+  background-color: var(--background-btn);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  /* унаслідувати inherit */
+}
+
+/* ---------footer---------- */
+
+.footer {
+  background-color: var(--first-background);
+}
+
+.address-list {
+  list-style: none;
+}
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--footer-color);
+  text-decoration: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+.address-link {
+  line-height: 1.71;
+  color: var(--footer-color);
+}
+.contact-link {
+  line-height: 1.71;
+  color: var(--contacts-text);
+}
+
+/* -----------портфоліо-------------------- */
+.btn-portfolio {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: inherit;
+  cursor: pointer;
+  background-color: var(--secondary-background);
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-description {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--secondary-text);
+}
+
+/* Лого  color: #2196F3  #000000 */
+
+/*  студія портконт color: #212121 
+Font Roboto Weight 500 */
+
+/* h1 color: #FFFFFF; 
+Font Roboto Weight 900 
+фон background: #2F303A */
+
+/* h3 color: #212121 
+Font Roboto Weight 700 */
+
+/* p color: #757575 Font Roboto Weight 400 */
+
+/* >Чим ми займаємося
+color: #212121
+Font Roboto Weight 700 
+фон всього background: */
+
+/* наша команда 
+color: #212121 
+Font Roboto Weight 700 
+фон сірий*/
+
+/* h3
+color: #212121 Font Roboto Weight 500
+ */
+
+/* p
+ color: #757575 Font Roboto Weight 400 */
+
+/* портфоліо
+ color: #212121 Font Roboto Weight 500
+ */
+/* 9 тем
+ color: #212121 Font Roboto Weight 700
+ color: #757575 Font Roboto Weight 400 */
