@@ -6,13 +6,14 @@ font-family: 'Roboto', sans-serif; */
   --first-background: #2f303a;
   --secondary-background: #f5f4fa;
 
-  --background-btn: #2196f3;
-  --btn-color: #ffffff;
-
   --accent-text: #2196f3;
   --primary-text: #212121;
   --secondary-text: #757575;
   --contacts-text: rgba(255, 255, 255, 0.6);
+
+  --background-btn: #2196f3;
+  --btn-color: #ffffff;
+  --btn-active: #188ce8;
 
   --hero-color: #ffffff;
   --logo-header: #000000;
@@ -27,17 +28,52 @@ body {
   font-size: 14px;
 }
 
-.text {
+.active:focus,
+.active:hover {
+  color: var(--accent-text);
+}
+
+.active-filter:focus,
+.active-filter:hover {
+  color: var(--btn-color);
+  background-color: var(--background-btn);
+}
+
+.active-btn:active {
+  background-color: var(--btn-active);
+}
+
+.header a,
+.footer-page a,
+.header-list {
   text-decoration: none;
 }
-.list {
+
+.text,
+.address-list {
+  text-decoration: none;
+}
+
+.list,
+.address-list,
+.header-list {
   list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 /* -------------header------------- */
 
-.logo-web {
-  color: var(--accent-text);
-}
 .header-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -45,25 +81,48 @@ body {
   line-height: 1.19;
   color: var(--logo-header);
 }
-.header-link {
+
+.logo-web {
+  color: var(--accent-text);
+}
+
+.nav-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: inherit;
   text-decoration: none;
 }
 
-.header-link:hover .header-email:hover {
-  color: #2196f3;
+.active.current {
+  color: var(--accent-text);
 }
-.haeder-tel .header-email {
+
+.header-list a {
   font-weight: 500;
-  line-height: 1.14x;
+  line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--secondary-text);
 }
 
 /* ---------------------секція hero ---------------------*/
+.hero {
+  background-color: var(--first-background);
+}
+
+.hero-title {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--hero-color);
+}
 
 .btn {
+  border: none;
   color: var(--btn-color);
   background-color: var(--background-btn);
   font-weight: 700;
@@ -71,25 +130,72 @@ body {
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
   font-family: inherit;
   /* унаслідувати inherit */
 }
 
+/* -------------adven---------------- */
+
+.advatage-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.advantage-text {
+  line-height: 1.14;
+  color: var(--secondary-text);
+}
+
+/* ------------about------------------ */
+.about-work {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16x;
+  text-align: center;
+}
+
+/* --------------------team-------------------- */
+
+.team-section {
+  background-color: var(--secondary-background);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16x;
+  text-align: center;
+  color: var(--primary-text);
+}
+.cards {
+}
+.card {
+  background-color: var(--primary-background);
+}
+.card-titel {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--primary-text);
+}
+.card-work {
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--secondary-text);
+}
+
 /* ---------footer---------- */
 
-.footer {
+.footer-page {
   background-color: var(--first-background);
 }
 
-.address-list {
-  list-style: none;
-}
 .footer-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--footer-color);
   text-decoration: none;
 }
@@ -102,6 +208,7 @@ body {
   line-height: 1.71;
   color: var(--footer-color);
 }
+
 .contact-link {
   line-height: 1.71;
   color: var(--contacts-text);
@@ -115,6 +222,7 @@ body {
   line-height: 1.62;
   color: inherit;
   cursor: pointer;
+  border: none;
   background-color: var(--secondary-background);
 }
 
@@ -122,12 +230,14 @@ body {
   text-decoration: none;
   color: inherit;
 }
+
 .project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
 .project-description {
   font-size: 16px;
   line-height: 1.88;
