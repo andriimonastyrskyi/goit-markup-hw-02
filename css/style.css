@@ -140,6 +140,7 @@ body {
 
 .advatage-title {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -246,41 +247,3 @@ body {
   line-height: 1.88;
   color: var(--secondary-text);
 }
-
-/* Лого  color: #2196F3  #000000 */
-
-/*  студія портконт color: #212121 
-Font Roboto Weight 500 */
-
-/* h1 color: #FFFFFF; 
-Font Roboto Weight 900 
-фон background: #2F303A */
-
-/* h3 color: #212121 
-Font Roboto Weight 700 */
-
-/* p color: #757575 Font Roboto Weight 400 */
-
-/* >Чим ми займаємося
-color: #212121
-Font Roboto Weight 700 
-фон всього background: */
-
-/* наша команда 
-color: #212121 
-Font Roboto Weight 700 
-фон сірий*/
-
-/* h3
-color: #212121 Font Roboto Weight 500
- */
-
-/* p
- color: #757575 Font Roboto Weight 400 */
-
-/* портфоліо
- color: #212121 Font Roboto Weight 500
- */
-/* 9 тем
- color: #212121 Font Roboto Weight 700
- color: #757575 Font Roboto Weight 400 */
